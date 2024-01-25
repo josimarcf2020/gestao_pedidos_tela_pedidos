@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAF6F6"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50sp"
+            android:text="Menu"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/entradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50sp"
+            android:layout_marginLeft="10sp"
+            android:text="Entradas"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/entradas"
+            >
+
+            <RadioButton
+                android:id="@+id/idEntrada1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batata Frita Curly"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descEntrada1"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Batatas fritas em espiral, servida com um rub (mistura de temperos) que leva páprica, alho e cebola em pó"
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:id="@+id/idEntrada2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casquinha de pizza"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descEntrada2"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Parece um sorvete de casquinha, mas é pizza com todos aqueles deliciosos sabores"
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:id="@+id/idEntrada3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tábua de queijos e torradas"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descEntrada3"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Bandeja de Frios com Salame, Queijo, Frutas, Torradas, Vinho, Geleia e Chocolate"
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:id="@+id/idEntrada4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bolinho de carne seca"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descEntrada4"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Massa cremosa a base de batata, superfície dourada e crocante, com o empanamento aderente à massa, recheio de carne seca desfiada, cebola e mussarela, com fragmentos de salsinha e cebolinha."
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50sp"
+            android:layout_marginLeft="10sp"
+            android:text="Prato principal"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rdGroup" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/principal"
+            >
+
+            <RadioButton
+                android:id="@+id/principal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espaguete ao frutos do mar"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descPrincipal1"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="feito com alho, cebola, pomodoro pelati, camarão, lagosta, lula, polvo e mexilhão, associado ao espaguete grano duro."
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/principal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filé mignon ao molho de ervas"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descPrincipal2"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Filet vem em 3 cortes de filet mignon temperados com ervas finas e servidos com molho Cabernet Merlot."
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/principal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capeletti de búfala e alcachofra"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descPrincipal3"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Esta é uma iguaria que combina a sofisticação da alcachofra com a cremosidade da mussarela de búfala, criando uma experiência culinária de luxo que é ao mesmo tempo deliciosa e requintada. "
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/principal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filé de peixe fresco a belle Meuniere"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descPrincipal4"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Prato clássico da gastronomia francesa, é feito com um molho composto por manteiga, camarões, salsinha, champignon e alcaparras."
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/sobremesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50sp"
+            android:layout_marginLeft="10sp"
+            android:text="Sobremesas"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rdGroup1" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/principal"
+            >
+
+            <RadioButton
+                android:id="@+id/sobremesa1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frozen Yogurt"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descSobremesa1"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Sobremessa gelada feita a base de iogurte, similar ao sorvete, porém com menor teor de gordura e além de saboroso e muito saudável o frozen yogurt permite você se deliciar com uma série de acompanhamentos (toppings) como frutas, coberturas e guloseimas."
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/sobremesa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiramisù"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descSobremesa2"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Sobremesa de origem italiana preparada com biscoitos champanhe embebidos em café, alternados com um creme preparado com queijo mascarpone, açúcar, ovos e algumas vezes vinho Marsala. Por fim, a sobremesa é polvilhada com cacau em pó."
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/sobremesa3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crème Brûlée"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descSobremesa3"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Sobremesa feita com creme de leite, ovos, açúcar e baunilha, com uma crosta de açúcar queimado por um maçarico, deitando fogo a uma bebida alcoólica que se deita sobre o creme, ou com um ferrer próprio. É geralmente servido gelado"
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/sobremesa4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petit Gâteau Tradicional"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descSobremesa4"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:text="Pequeno bolinho de chocolate, quentinho e, com um recheio que se esparrama pelo prato.F"
+                android:textColor="#CE454545"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50sp"
+            android:layout_marginLeft="10sp"
+            android:text="Bebidas"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rdGroup3" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rdGroup2"
+            >
+
+            <RadioButton
+                android:id="@+id/rbBebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Água Mineral"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/bebida1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vinho do Porto"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/bebida2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wiskye 12 anos"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/bebida3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Água de côco"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20sp"
+                />
+
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/btn_pedir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar Pedido"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="10sp"
+            android:src="@drawable/baseline_check_circle_outline_24"
+            />
+
+        <ImageButton
+            android:id="@+id/ptn_encerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encerrar conta"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:src="@drawable/baseline_checklist_24"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
