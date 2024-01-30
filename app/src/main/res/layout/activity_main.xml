@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:background="#FAF6F6"
     android:orientation="vertical"
+    android:layout_marginBottom="10sp"
     >
 
     <LinearLayout
@@ -17,11 +18,11 @@
         >
 
         <EditText
-            android:id="@+id/titulo"
+            android:id="@+id/txt_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="50sp"
-            android:text="Menu"
+            android:text="@string/txt_title"
             android:textSize="40sp"
             android:textStyle="italic"
             android:textColor="@color/black"
@@ -29,395 +30,618 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/entradas"
+            android:id="@+id/txt_appetizer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="50sp"
             android:layout_marginLeft="10sp"
-            android:text="Entradas"
+            android:text="@string/txt_appetizer"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titulo" />
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
         <RadioGroup
-            android:id="@+id/rdGroup"
+            android:id="@+id/rdg_Appetizer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/entradas"
-            >
+            android:layout_height="332dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_appetizer">
 
             <RadioButton
-                android:id="@+id/idEntrada1"
+                android:id="@+id/rb_Appetizer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Batata Frita Curly"
-                android:textColor="@color/black"
-                android:textStyle="italic"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Appetizer1"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descEntrada1"
+                android:id="@+id/txt_priceAppetizer1"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceAppetizer1"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descAppetizer1"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Batatas fritas em espiral, servida com um rub (mistura de temperos) que leva páprica, alho e cebola em pó"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descAppetizer1"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/idEntrada2"
+                android:id="@+id/rb_Appetizer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Casquinha de pizza"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Appetizer2"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descEntrada2"
+                android:id="@+id/txt_priceAppetizer2"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceAppetizer2"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descAppetizer2"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Parece um sorvete de casquinha, mas é pizza com todos aqueles deliciosos sabores"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descAppetizer2"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/idEntrada3"
+                android:id="@+id/rb_Appetizer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tábua de queijos e torradas"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Appetizer3"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descEntrada3"
+                android:id="@+id/txt_priceAppetizer3"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceAppetizer2"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descAppetizer3"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Bandeja de Frios com Salame, Queijo, Frutas, Torradas, Vinho, Geleia e Chocolate"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descAppetizer3"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
-                android:textSize="12sp"/>
+                android:textSize="12sp"
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/idEntrada4"
+                android:id="@+id/rb_Appetizer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bolinho de carne seca"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Appetizer4"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descEntrada4"
-                android:layout_width="324dp"
+                android:id="@+id/txt_priceAppetizer4"
+                android:layout_width="191dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60sp"
-                android:text="Massa cremosa a base de batata, superfície dourada e crocante, com o empanamento aderente à massa, recheio de carne seca desfiada, cebola e mussarela, com fragmentos de salsinha e cebolinha."
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceAppetizer4"
+                android:textAlignment="textEnd"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
-                android:textSize="12sp"/>
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descAppetizer4"
+                android:layout_width="324dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descMainCourse4"
+                android:textColor="#CE454545"
+                android:textSize="12sp"
+                android:textStyle="italic" />
 
         </RadioGroup>
 
         <EditText
-            android:id="@+id/principal"
+            android:id="@+id/txt_mainCourse"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="50sp"
+            android:layout_height="66dp"
             android:layout_marginLeft="10sp"
-            android:text="Prato principal"
+            android:paddingTop="10sp"
+            android:text="@string/txt_mainCourse"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rdGroup" />
+            app:layout_constraintTop_toBottomOf="@id/rdg_Appetizer" />
 
         <RadioGroup
-            android:id="@+id/rdGroup1"
+            android:id="@+id/rbg_MainCourse"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/principal"
-            >
+            android:layout_height="355dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_mainCourse">
 
             <RadioButton
-                android:id="@+id/principal1"
+                android:id="@+id/rb_MainCourse1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Espaguete ao frutos do mar"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_MainCourse1"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descPrincipal1"
+                android:id="@+id/txt_priceMainCourse1"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceMainCourse1"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descMainCourse1"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="feito com alho, cebola, pomodoro pelati, camarão, lagosta, lula, polvo e mexilhão, associado ao espaguete grano duro."
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descMainCourse1"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/principal2"
+                android:id="@+id/rb_MainCourse2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filé mignon ao molho de ervas"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_MainCourse2"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descPrincipal2"
+                android:id="@+id/txt_priceMainCourse2"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceMainCourse2"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descMainCourse2"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Filet vem em 3 cortes de filet mignon temperados com ervas finas e servidos com molho Cabernet Merlot."
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descMainCourse2"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/principal3"
+                android:id="@+id/rb_MainCourse3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Capeletti de búfala e alcachofra"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_MainCourse3"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descPrincipal3"
+                android:id="@+id/txt_priceMainCourse3"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceMainCourse3"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descMainCourse3"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Esta é uma iguaria que combina a sofisticação da alcachofra com a cremosidade da mussarela de búfala, criando uma experiência culinária de luxo que é ao mesmo tempo deliciosa e requintada. "
+                android:text="@string/txt_descMainCourse3"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic"
+                android:layout_marginTop="10sp"/>
 
             <RadioButton
-                android:id="@+id/principal4"
+                android:id="@+id/rb_MainCourse4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filé de peixe fresco a belle Meuniere"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_MainCourse3"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descPrincipal4"
-                android:layout_width="324dp"
+                android:id="@+id/txt_priceMainCourse4"
+                android:layout_width="191dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60sp"
-                android:text="Prato clássico da gastronomia francesa, é feito com um molho composto por manteiga, camarões, salsinha, champignon e alcaparras."
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceMainCourse4"
+                android:textAlignment="textEnd"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descMainCourse4"
+                android:layout_width="324dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="15sp"
+                android:text="@string/txt_descMainCourse4"
+                android:textColor="#CE454545"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
         </RadioGroup>
 
         <EditText
-            android:id="@+id/sobremesa"
+            android:id="@+id/txt_Dessert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="50sp"
+            android:paddingTop="10sp"
             android:layout_marginLeft="10sp"
-            android:text="Sobremesas"
+            android:text="@string/rbg_Dessert"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rdGroup1" />
+            app:layout_constraintTop_toBottomOf="@id/rbg_MainCourse" />
 
         <RadioGroup
-            android:id="@+id/rdGroup2"
+            android:id="@+id/rdg_Dessert"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/principal"
-            >
+            android:layout_height="465dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_Dessert">
 
             <RadioButton
-                android:id="@+id/sobremesa1"
+                android:id="@+id/rb_Dessert1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Frozen Yogurt"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Dessert1"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descSobremesa1"
+                android:id="@+id/txt_priceDessert1"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceDessert1"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDessert1"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Sobremessa gelada feita a base de iogurte, similar ao sorvete, porém com menor teor de gordura e além de saboroso e muito saudável o frozen yogurt permite você se deliciar com uma série de acompanhamentos (toppings) como frutas, coberturas e guloseimas."
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDessert1"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/sobremesa2"
+                android:id="@+id/rb_Dessert2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tiramisù"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Dessert2"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descSobremesa2"
+                android:id="@+id/txt_priceDessert2"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceDessert2"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDessert2"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Sobremesa de origem italiana preparada com biscoitos champanhe embebidos em café, alternados com um creme preparado com queijo mascarpone, açúcar, ovos e algumas vezes vinho Marsala. Por fim, a sobremesa é polvilhada com cacau em pó."
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDessert2"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/sobremesa3"
+                android:id="@+id/rb_Dessert3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Crème Brûlée"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Dessert3"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descSobremesa3"
+                android:id="@+id/txt_price_Dessert3"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_price_Dessert3"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDessert3"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60sp"
-                android:text="Sobremesa feita com creme de leite, ovos, açúcar e baunilha, com uma crosta de açúcar queimado por um maçarico, deitando fogo a uma bebida alcoólica que se deita sobre o creme, ou com um ferrer próprio. É geralmente servido gelado"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDessert3"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
             <RadioButton
-                android:id="@+id/sobremesa4"
+                android:id="@+id/rb_Dessert4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Petit Gâteau Tradicional"
-                android:textStyle="italic"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20sp"
-                />
+                android:text="@string/rb_Dessert4"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/txt_descSobremesa4"
-                android:layout_width="324dp"
+                android:id="@+id/txt_priceDessert4"
+                android:layout_width="191dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60sp"
-                android:text="Pequeno bolinho de chocolate, quentinho e, com um recheio que se esparrama pelo prato.F"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_price_Dessert4"
+                android:textAlignment="textEnd"
                 android:textColor="#CE454545"
-                android:textStyle="italic"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDessert4"
+                android:layout_width="324dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDessert4"
+                android:textColor="#CE454545"
                 android:textSize="12sp"
-                />
+                android:textStyle="italic" />
 
         </RadioGroup>
 
         <EditText
-            android:id="@+id/bebidas"
+            android:id="@+id/txt_drinks"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="50sp"
+            android:layout_height="48sp"
             android:layout_marginLeft="10sp"
-            android:text="Bebidas"
+            android:text="@string/txt_Drinks"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rdGroup3" />
+            app:layout_constraintTop_toBottomOf="@id/rdg_Dessert" />
 
         <RadioGroup
-            android:id="@+id/rdGroup3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/rdGroup2"
-            >
-
-            <RadioButton
-                android:id="@+id/rbBebidas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Água Mineral"
-                android:textStyle="italic"
-                android:textColor="@color/black"
-                android:layout_marginLeft="20sp"
-                />
-
-            <RadioButton
-                android:id="@+id/bebida1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vinho do Porto"
-                android:textStyle="italic"
-                android:textColor="@color/black"
-                android:layout_marginLeft="20sp"
-                />
-
-            <RadioButton
-                android:id="@+id/bebida2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Wiskye 12 anos"
-                android:textStyle="italic"
-                android:textColor="@color/black"
-                android:layout_marginLeft="20sp"
-                />
-
-            <RadioButton
-                android:id="@+id/bebida3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Água de côco"
-                android:textStyle="italic"
-                android:textColor="@color/black"
-                android:layout_marginLeft="20sp"
-                />
-
-        </RadioGroup>
-
-        <ImageButton
-            android:id="@+id/btn_pedir"
+            android:id="@+id/rdg_Drinks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Confirmar Pedido"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:layout_marginTop="30sp"
-            android:layout_marginBottom="10sp"
-            android:src="@drawable/baseline_check_circle_outline_24"
-            />
+            app:layout_constraintTop_toBottomOf="@id/txt_drinks">
 
-        <ImageButton
-            android:id="@+id/ptn_encerrar"
+            <RadioButton
+                android:id="@+id/rb_Drink1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="@string/rb_Drink1"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_priceDrink1"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceDrink1"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDrink1"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDrink1"
+                android:textColor="#CE454545"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/rb_Drink2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="@string/rb_Drink2"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_priceDrink2"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceDrink2"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDrink2"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDrink2"
+                android:textColor="#CE454545"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/rb_Drink3"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="@string/rb_Drink3"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_priceDrink3"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceDrink3"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDrink3"
+                android:layout_width="324dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDrink3"
+                android:textColor="#CE454545"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/rb_Drink4"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="@string/rb_Drink4"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_priceDrink4"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200sp"
+                android:layout_marginTop="-30sp"
+                android:paddingEnd="20sp"
+                android:text="@string/txt_priceDrink4"
+                android:textAlignment="textEnd"
+                android:textColor="#CE454545"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_descDrink4"
+                android:layout_width="324dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/txt_descDrink4"
+                android:textColor="#CE454545"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_Total"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Encerrar conta"
-            android:textSize="20sp"
+            android:text="@string/txt_Total"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp"
-            android:src="@drawable/baseline_checklist_24"
             />
 
     </LinearLayout>

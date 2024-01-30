@@ -1,3 +1,63 @@
 <resources>
-    <string name="app_name">AtivPrat11Ativ5</string>
+    <string name="app_name">Eficcient Service</string>
+    <string name="txt_title">Menu</string>
+
+    <string name="txt_appetizer">Entradas</string>
+    <string name="rb_Appetizer1">Batata Frita Curly</string>
+    <string name="txt_priceAppetizer1">R$ 25,60</string>
+    <string name="txt_descAppetizer1">Batatas fritas em espiral, servida com um rub (mistura de temperos) que leva páprica, alho e cebola em pó.</string>
+    <string name="rb_Appetizer2">Casquinha de pizza</string>
+    <string name="txt_priceAppetizer2">R$ 26,30</string>
+    <string name="txt_descAppetizer2">Parece um sorvete de casquinha, mas é pizza com todos aqueles deliciosos sabores.</string>
+    <string name="rb_Appetizer3">Tábua de queijos e torradas</string>
+    <string name="txt_priceAppetizer3">R$ 22,30</string>
+    <string name="txt_descAppetizer3">Bandeja de Frios com Salame, Queijo, Frutas, Torradas, Vinho, Geleia e Chocolate.</string>
+    <string name="rb_Appetizer4">Bolinho de carne seca</string>
+    <string name="txt_priceAppetizer4">R$ 25,86</string>
+    <string name="txt_descAppetizer4">Bandeja de Frios com Salame, Queijo, Frutas, Torradas, Vinho, Geleia e Chocolate.</string>
+
+    <string name="txt_mainCourse">Prato Principal</string>
+    <string name="rb_MainCourse1">Espaguete ao frutos do mar</string>
+    <string name="txt_priceMainCourse1">R$ 125,86</string>
+    <string name="txt_descMainCourse1">Feito com alho, cebola, pomodoro pelati, camarão, lagosta, lula, polvo e mexilhão, associado ao espaguete grano duro.</string>
+    <string name="rb_MainCourse2">Filé mignon ao molho de ervas</string>
+    <string name="txt_priceMainCourse2">R$ 105,86</string>
+    <string name="txt_descMainCourse2">Filet vem em 3 cortes de filet mignon temperados com ervas finas e servidos com molho Cabernet Merlot.</string>
+    <string name="rb_MainCourse3">Filé de peixe fresco a belle Meuniere</string>
+    <string name="txt_priceMainCourse3">R$ 115,56</string>
+    <string name="txt_descMainCourse3">Esta é uma iguaria que combina a sofisticação da alcachofra com a cremosidade da mussarela de búfala, criando uma experiência culinária de luxo que é ao mesmo tempo deliciosa e requintada.</string>
+    <string name="rb_MainCourse4">Filé de pintado com manga e castanha de caju</string>
+    <string name="txt_priceMainCourse4">R$ 15,67</string>
+    <string name="txt_descMainCourse4">Este filé de pintado com manga e castanha de caju é a sofisticação em forma de comida.</string>
+
+    <string name="rbg_Dessert">Sobremesas</string>
+    <string name="rb_Dessert1">Frozen Yogurt</string>
+    <string name="txt_priceDessert1">R$ 125,86</string>
+    <string name="txt_descDessert1">Sobremessa gelada feita a base de iogurte, similar ao sorvete, porém com menor teor de gordura e além de saboroso e muito saudável o frozen yogurt permite você se deliciar com uma série de acompanhamentos (toppings) como frutas, coberturas e guloseimas.</string>
+    <string name="rb_Dessert2">Tiramisù</string>
+    <string name="txt_priceDessert2">R$ 25,56</string>
+    <string name="txt_descDessert2">Sobremesa de origem italiana preparada com biscoitos champanhe embebidos em café, alternados com um creme preparado com queijo mascarpone, açúcar, ovos e algumas vezes vinho Marsala. Por fim, a sobremesa é polvilhada com cacau em pó.</string>
+    <string name="rb_Dessert3">Crème Brûlée</string>
+    <string name="txt_price_Dessert3">R$ 25,56</string>
+    <string name="txt_descDessert3">Sobremesa feita com creme de leite, ovos, açúcar e baunilha, com uma crosta de açúcar queimado por um maçarico, deitando fogo a uma bebida alcoólica que se deita sobre o creme, ou com um ferrer próprio. É geralmente servido gelado</string>
+    <string name="rb_Dessert4">Petit Gâteau Tradicional</string>
+    <string name="txt_price_Dessert4">R$ 12,56</string>
+    <string name="txt_descDessert4">Pequeno bolinho de chocolate, quentinho e, com um recheio que se esparrama pelo prato.</string>
+
+    <string name="txt_Drinks">Bebidas</string>
+    <string name="rbg_Drinks">Bebidas</string>
+    <string name="rb_Drink1">Água Mineral</string>
+    <string name="txt_priceDrink1">R$ 7,00</string>
+    <string name="txt_descDrink1">Copo descartável de 210ml com gelo.</string>
+    <string name="rb_Drink2">Vinho do Porto</string>
+    <string name="txt_priceDrink2">R$ 175,37</string>
+    <string name="txt_descDrink2">Vinho do Porto Dom Jose Ruby 750ml.</string>
+    <string name="rb_Drink3">Wiskey 12 anos</string>
+    <string name="txt_priceDrink3">R$ 225,56</string>
+    <string name="txt_descDrink3">Whisky Chivas 12 Anos 1L</string>
+    <string name="rb_Drink4">Água de côco</string>
+    <string name="txt_priceDrink4">R$ 12,56</string>
+    <string name="txt_descDrink4">Jarra de 600ml.</string>
+    <string name="txt_Total">R$0,00</string>
+    <string name="txt_hintTotal">Total do Pedido</string>
 </resources>
