@@ -58,6 +58,8 @@
     <string name="rb_Drink4">Água de côco</string>
     <string name="txt_priceDrink4">R$ 12,56</string>
     <string name="txt_descDrink4">Jarra de 600ml.</string>
+
+    <string name="btnCalcular">Calcular</string>
     <string name="txt_Total">R$0,00</string>
     <string name="txt_hintTotal">Total do Pedido</string>
 </resources>
