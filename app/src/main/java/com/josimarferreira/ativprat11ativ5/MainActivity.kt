@@ -1,9 +1,11 @@
 package com.josimarferreira.ativprat11ativ5
 
 import android.annotation.SuppressLint
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.get
 import com.josimarferreira.ativprat11ativ5.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -32,32 +34,31 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             selectedDessert = binding.rdgDessert.checkedRadioButtonId
             selectedDrinks = binding.rdgDrinks.checkedRadioButtonId
 
-            onClick()
+            this.onClick()
 
         }
 
     }
 
-    @SuppressLint("SetTextI18n")
     private fun onClick() {
 
         selectedAppetizer = binding.rdgAppetizer.checkedRadioButtonId
 
         valueAppetizer = when (selectedAppetizer){
-            2131231075 -> 25.6f
-            2131231076 -> 28.3f
-            2131231077 -> 22.3f
-            2131231078 -> 25.86f
+            binding.rbAppetizer1.id -> 25.6f
+            binding.rbAppetizer2.id -> 28.3f
+            binding.rbAppetizer3.id -> 22.3f
+            binding.rbAppetizer4.id -> 25.86f
             else -> {0.0f}
         }
 
         selectedMainCourse = binding.rdgMainCourse.checkedRadioButtonId
 
         valueMainCourse = when (selectedMainCourse) {
-            2131231087 -> 125.86f
-            2131231088 -> 105.80f
-            2131231089 -> 115.56f
-            2131231090 -> 15.67f
+            binding.rbMainCourse1.id -> 125.86f
+            binding.rbMainCourse2.id -> 105.80f
+            binding.rbMainCourse3.id -> 115.56f
+            binding.rbMainCourse4.id -> 15.67f
             else -> {
                 0.0f
             }
@@ -66,10 +67,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         selectedDessert = binding.rdgDessert.checkedRadioButtonId
 
         valueDessert = when (selectedDessert) {
-            2131231079 -> 25.86f
-            2131231080 -> 25.56f
-            2131231081 -> 25.56f
-            2131231082 -> 12.56f
+            binding.rbDessert1.id -> 25.86f
+            binding.rbDessert2.id -> 25.56f
+            binding.rbDessert3.id -> 25.56f
+            binding.rbDessert4.id -> 12.56f
             else -> {
                 0.0f
             }
@@ -78,10 +79,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         selectedDrinks = binding.rdgDrinks.checkedRadioButtonId
 
         valueDrinks = when (selectedDrinks) {
-            2131231083 -> 7.0f
-            2131231084 -> 175.37f
-            2131231085 -> 225.56f
-            2131231086 -> 12.56f
+            binding.rbDrink1.id -> 7.0f
+            binding.rbDrink2.id -> 175.37f
+            binding.rbDrink3.id -> 225.56f
+            binding.rbDrink4.id -> 12.56f
             else -> {
                 0.0f
             }
